@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box; /*hack par box model*/
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /*hack par box model*/
+}
+
+body {
+  font-size: 16px;
+}
+
+.card {
+  width: 60rem;
+  border-radius: 2rem;
+  background-color: grey;
+}

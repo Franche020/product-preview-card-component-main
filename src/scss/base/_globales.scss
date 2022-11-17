@@ -1,0 +1,17 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+html {
+    box-sizing: border-box; /*hack par box model*/
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /*hack par box model*/
+}  
+
+body {
+    font-size: 16px;
+}
+
