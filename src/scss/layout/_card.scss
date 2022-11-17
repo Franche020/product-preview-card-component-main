@@ -1,8 +1,46 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
 .card {
-    width: 60rem;
-    border-radius: 2rem;
-    background-color: grey;
-    .imagen {
+    max-width: 60rem;
+    border-radius: 1rem;
+    background-color: v.$white;
+}
+.contenedor {
+    width:90%;
+    margin:0 auto;
+}
+.imagen {
+    display: inline-block;
+    max-width: 100%;
+    img{
+        border-radius:  1rem 1rem 0 0;
+    }
+}
+.header {
+    h2{
+        text-transform: uppercase;
+        color: v.$very-dark-blue;
+        font-weight: 500;
         
     }
+    h1 {
+        font-family: v.$Fraunces;
+    }
+}
+.descripcion {
+    color: v.$very-dark-blue;
+    
+}
+.precio {  
+    color: v.$dark-cyan;
+    font-family: v.$Fraunces;
+    font-size: 3.6rem;
+
+.precio-antiguo{
+    font-size: 1.6rem;
+    font-family: v.$monserrat;
+    
+}
 }

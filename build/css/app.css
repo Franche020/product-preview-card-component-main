@@ -9,10 +9,61 @@ html {
 
 body {
   font-size: 16px;
+  background-color: hsl(30deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
 }
 
 .card {
-  width: 60rem;
-  border-radius: 2rem;
-  background-color: grey;
+  max-width: 60rem;
+  border-radius: 1rem;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.imagen {
+  display: inline-block;
+  max-width: 100%;
+}
+.imagen img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.header h2 {
+  text-transform: uppercase;
+  color: hsl(212deg, 21%, 48%);
+  font-weight: 500;
+}
+.header h1 {
+  font-family: "Fraunces", serif;
+}
+
+.descripcion {
+  color: hsl(212deg, 21%, 48%);
+}
+
+.precio {
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 3.6rem;
+}
+.precio .precio-antiguo {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
 }
