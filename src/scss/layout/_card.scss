@@ -1,46 +1,75 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
-
-
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+main{
+    display: inline-block
+}
 .card {
-    max-width: 60rem;
-    border-radius: 1rem;
-    background-color: v.$white;
+  border-radius: 1rem;
+  background-color: v.$white;
 }
 .contenedor {
-    width:90%;
-    margin:0 auto;
+  max-width: 85%;
+  margin: 0 auto;
 }
 .imagen {
-    display: inline-block;
-    max-width: 100%;
-    img{
-        border-radius:  1rem 1rem 0 0;
-    }
+    background-image: url(../../images/image-product-mobile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100%;
+    min-height: 25rem;
+    border-radius: 1rem 1rem 0 0;
+    margin:0;
+
 }
 .header {
-    h2{
-        text-transform: uppercase;
-        color: v.$very-dark-blue;
-        font-weight: 500;
-        
-    }
-    h1 {
-        font-family: v.$Fraunces;
-    }
+  h2 {
+    text-transform: uppercase;
+    color: v.$very-dark-blue;
+    font-weight: 500;
+  }
+  h1 {
+    font-family: v.$Fraunces;
+  }
 }
 .descripcion {
-    color: v.$very-dark-blue;
-    
-}
-.precio {  
-    color: v.$dark-cyan;
-    font-family: v.$Fraunces;
-    font-size: 3.6rem;
+  color: v.$very-dark-blue;
 
-.precio-antiguo{
-    font-size: 1.6rem;
-    font-family: v.$monserrat;
-    
+  line-height: 1.6;
 }
+.precio {
+  color: v.$dark-cyan;
+  font-family: v.$Fraunces;
+  font-size: 3.6rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
+  margin-bottom: -2rem;
+
+  .precio-antiguo {
+    font-size: 1.5rem;
+    font-family: v.$monserrat;
+    color: v.$dark-grayish-blue;
+    text-decoration: line-through;
+  }
+}
+
+.boton {
+  background-color: v.$dark-cyan;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 3rem 0 3rem 0;
+  a {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  p {
+    color: v.$white;
+    font-size: 2rem;
+  }
+}
+.attribution {
+    margin-top: 5rem;
 }
