@@ -29,6 +29,7 @@ h1, h2 {
 p {
   margin: 0;
   padding: 0;
+  font-size: 1.4rem;
 }
 
 a {
@@ -43,11 +44,24 @@ main {
 .card {
   border-radius: 1rem;
   background-color: hsl(0deg, 0%, 100%);
+  width: 37.5rem;
+}
+@media (min-width: 37.5rem) {
+  .card {
+    width: 70rem;
+    display: flex;
+    direction: column;
+  }
 }
 
 .contenedor {
   max-width: 85%;
   margin: 0 auto;
+}
+@media (min-width: 37.5rem) {
+  .contenedor {
+    margin: 0 4rem 0 4rem;
+  }
 }
 
 .imagen {
@@ -60,6 +74,13 @@ main {
   border-radius: 1rem 1rem 0 0;
   margin: 0;
 }
+@media (min-width: 37.5rem) {
+  .imagen {
+    background-image: url(../../images/image-product-desktop.jpg);
+    min-width: 50%;
+    border-radius: 1rem 0 0 1rem;
+  }
+}
 
 .header h2 {
   text-transform: uppercase;
@@ -69,21 +90,29 @@ main {
 .header h1 {
   font-family: "Fraunces", serif;
 }
+@media (min-width: 37.5rem) {
+  .header {
+    margin-top: 4rem;
+  }
+}
 
 .descripcion {
   color: hsl(212deg, 21%, 48%);
+  letter-spacing: 0.1rem;
   line-height: 1.6;
 }
 
 .precio {
   color: hsl(158deg, 36%, 37%);
   font-family: "Fraunces", serif;
-  font-size: 3.6rem;
   display: flex;
   align-items: center;
   gap: 3rem;
   padding-top: 3rem;
   margin-bottom: -2rem;
+}
+.precio p {
+  font-size: 3.6rem;
 }
 .precio .precio-antiguo {
   font-size: 1.5rem;
@@ -102,6 +131,7 @@ main {
   display: flex;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
 }
 .boton p {
   color: hsl(0deg, 0%, 100%);

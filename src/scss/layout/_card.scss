@@ -6,10 +6,19 @@ main{
 .card {
   border-radius: 1rem;
   background-color: v.$white;
+  width: v.$mobile;
+  @include m.mobile{
+      width: 70rem;
+      display: flex;
+      direction: column;
+  }
 }
 .contenedor {
   max-width: 85%;
   margin: 0 auto;
+  @include m.mobile{
+      margin: 0 4rem 0 4rem;
+  }
 }
 .imagen {
     background-image: url(../../images/image-product-mobile.jpg);
@@ -20,6 +29,11 @@ main{
     min-height: 25rem;
     border-radius: 1rem 1rem 0 0;
     margin:0;
+    @include m.mobile{
+      background-image: url(../../images/image-product-desktop.jpg);
+        min-width: 50%;
+        border-radius: 1rem 0 0 1rem ;
+    }
 
 }
 .header {
@@ -31,21 +45,26 @@ main{
   h1 {
     font-family: v.$Fraunces;
   }
+  @include m.mobile{
+      margin-top: 4rem;
+  }
 }
 .descripcion {
   color: v.$very-dark-blue;
-
+  letter-spacing: 0.1rem;
   line-height: 1.6;
 }
 .precio {
   color: v.$dark-cyan;
   font-family: v.$Fraunces;
-  font-size: 3.6rem;
   display: flex;
   align-items: center;
   gap: 3rem;
   padding-top: 3rem;
   margin-bottom: -2rem;
+  p {
+    font-size: 3.6rem;
+  }
 
   .precio-antiguo {
     font-size: 1.5rem;
@@ -64,10 +83,14 @@ main{
     display: flex;
     gap: 2rem;
     justify-content: center;
+    align-items: center;
   }
   p {
     color: v.$white;
     font-size: 2rem;
+  }
+  &:hover {
+    background-color: darken(v.$dark-cyan, 10%);
   }
 }
 .attribution {
