@@ -107,6 +107,9 @@ main {
   color: hsl(0deg, 0%, 100%);
   font-size: 2rem;
 }
+.boton:hover {
+  background-color: #2c5e4b;
+}
 
 .attribution {
   margin-top: 5rem;
