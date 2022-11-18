@@ -16,7 +16,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-~~**Note: Delete this note and update the table of contents based on what sections you keep.*~~*
 
 ## Overview
 
@@ -34,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Franche020/product-preview-card-component-main/tree/frontendmentor)
+- Solution URL: [GitHub](https://github.com/Franche020/product-preview-card-component-main/)
 - Live Site URL: [GitHub Pages](https://franche020.github.io/product-preview-card-component-main/)
 
 ## My process
